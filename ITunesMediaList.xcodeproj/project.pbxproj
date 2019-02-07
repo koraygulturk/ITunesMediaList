@@ -14,6 +14,8 @@
 		8F0D9D8C220CC94E00ECE970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F0D9D8A220CC94E00ECE970 /* LaunchScreen.storyboard */; };
 		8F0D9D97220CC94E00ECE970 /* ITunesMediaListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D9D96220CC94E00ECE970 /* ITunesMediaListTests.swift */; };
 		8F0D9DA2220CC94E00ECE970 /* ITunesMediaListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D9DA1220CC94E00ECE970 /* ITunesMediaListUITests.swift */; };
+		8F0D9DB2220CC99900ECE970 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D9DB1220CC99900ECE970 /* UIColor+Theme.swift */; };
+		8F0D9DB6220CCA1700ECE970 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0D9DB5220CCA1700ECE970 /* MediaService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8F0D9D9D220CC94E00ECE970 /* ITunesMediaListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ITunesMediaListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0D9DA1220CC94E00ECE970 /* ITunesMediaListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesMediaListUITests.swift; sourceTree = "<group>"; };
 		8F0D9DA3220CC94E00ECE970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F0D9DB1220CC99900ECE970 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		8F0D9DB5220CCA1700ECE970 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,13 @@
 		8F0D9D80220CC94D00ECE970 /* ITunesMediaList */ = {
 			isa = PBXGroup;
 			children = (
+				8F0D9DB4220CC9C000ECE970 /* Services */,
+				8F0D9DB3220CC9B900ECE970 /* Models */,
+				8F0D9DB0220CC97F00ECE970 /* Extensions */,
+				8F0D9DAF220CC96D00ECE970 /* View */,
 				8F0D9D81220CC94D00ECE970 /* AppDelegate.swift */,
 				8F0D9D83220CC94D00ECE970 /* ViewController.swift */,
-				8F0D9D85220CC94D00ECE970 /* Main.storyboard */,
 				8F0D9D88220CC94E00ECE970 /* Assets.xcassets */,
-				8F0D9D8A220CC94E00ECE970 /* LaunchScreen.storyboard */,
 				8F0D9D8D220CC94E00ECE970 /* Info.plist */,
 			);
 			path = ITunesMediaList;
@@ -123,6 +129,38 @@
 				8F0D9DA3220CC94E00ECE970 /* Info.plist */,
 			);
 			path = ITunesMediaListUITests;
+			sourceTree = "<group>";
+		};
+		8F0D9DAF220CC96D00ECE970 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F0D9D85220CC94D00ECE970 /* Main.storyboard */,
+				8F0D9D8A220CC94E00ECE970 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F0D9DB0220CC97F00ECE970 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F0D9DB1220CC99900ECE970 /* UIColor+Theme.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8F0D9DB3220CC9B900ECE970 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F0D9DB4220CC9C000ECE970 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F0D9DB5220CCA1700ECE970 /* MediaService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0D9DB2220CC99900ECE970 /* UIColor+Theme.swift in Sources */,
 				8F0D9D84220CC94D00ECE970 /* ViewController.swift in Sources */,
+				8F0D9DB6220CCA1700ECE970 /* MediaService.swift in Sources */,
 				8F0D9D82220CC94D00ECE970 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
